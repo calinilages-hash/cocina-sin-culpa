@@ -362,7 +362,6 @@ src="https://www.facebook.com/tr?id=2031116877579772&ev=PageView&noscript=1"
     .reveal{opacity:1;transform:none;transition:none;}
   }
 
-
   html{scroll-behavior:smooth;}
   .rev-viewport{max-width:340px;margin:0 auto;overflow:hidden;border-radius:16px;}
   .rev-track{display:flex;transition:transform .4s ease;}
@@ -932,6 +931,279 @@ src="https://www.facebook.com/tr?id=2031116877579772&ev=PageView&noscript=1"
   .delivery-item p{font-size:10px;line-height:1.3;}
   /* nota na mesma largura das valoraciones */
   .ratings-sec .rating-summary{max-width:340px;margin:0 auto 16px;}
+  /* hero — ângulo da dor */
+  .hero .headline{font-size:33px;line-height:1.2;margin-bottom:4px;}
+  .hero .headline .lead{color:var(--gold);}
+  .hero-heart{color:var(--gold);font-size:17px;margin:10px 0 14px;}
+  .hero-promise{
+    font-family:'Fraunces',serif;font-size:23px;line-height:1.3;
+    color:var(--gold);margin-bottom:8px;font-weight:600;
+  }
+  .hero .sub{font-size:16px;line-height:1.5;max-width:420px;margin:0 auto 22px;}
+  .hero-band{
+    background:var(--sage-deep);color:var(--white);
+    border-radius:12px;padding:14px 18px;margin:20px auto 26px;
+    max-width:420px;font-size:14.5px;line-height:1.45;font-weight:600;
+  }
+  @media(max-width:600px){
+    .hero .headline{font-size:27px;}
+    .hero-promise{font-size:20px;}
+    .hero .sub{font-size:15px;}
+  }
+  /* selos + faixa */
+  .seals{padding:26px 0 30px;background:var(--cream);}
+  .seals-row{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:8px;
+    max-width:420px;margin:0 auto 20px;
+  }
+  .seal{text-align:center;}
+  .seal .ic{
+    width:46px;height:46px;border-radius:50%;
+    border:1.5px solid var(--gold);
+    background:var(--white);
+    display:flex;align-items:center;justify-content:center;
+    font-size:20px;margin:0 auto 8px;
+  }
+  .seal span{
+    display:block;font-size:10px;font-weight:700;letter-spacing:.06em;
+    text-transform:uppercase;color:var(--sage-deep);line-height:1.25;
+  }
+  .seals-band{
+    background:var(--sage-deep);color:var(--white);
+    border-radius:12px;padding:16px 20px;max-width:420px;margin:0 auto;
+    text-align:center;font-family:'Fraunces',serif;font-size:16.5px;
+    line-height:1.35;letter-spacing:.02em;
+  }
+  /* expert com o ebook */
+  .expert{padding:0 0 34px;background:var(--cream);}
+  .expert-img{
+    width:100%;max-width:420px;display:block;margin:0 auto;
+    border-radius:16px;
+  }
+  /* bloco da dor */
+  .pain{padding:44px 0;background:var(--cream-deep);}
+  .pain .label{
+    font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--gold);margin-bottom:14px;
+  }
+  .pain h2{
+    font-family:'Fraunces',serif;font-size:27px;line-height:1.22;
+    color:var(--ink);margin-bottom:12px;
+  }
+  .pain h2 em{font-style:normal;color:var(--terracotta);}
+  .pain .sub{
+    font-size:15px;line-height:1.55;color:var(--ink-soft);
+    margin-bottom:24px;max-width:460px;
+  }
+  .pain-grid{display:flex;flex-direction:column;gap:12px;max-width:420px;}
+  .pain-card{
+    background:var(--white);
+    border-left:4px solid #D9534F;
+    border-radius:10px;
+    padding:16px 16px 16px 14px;
+    display:flex;gap:12px;align-items:flex-start;
+    box-shadow:0 4px 12px rgba(46,36,24,.06);
+  }
+  .pain-card .ic{
+    width:36px;height:36px;border-radius:50%;
+    background:#FBE9E6;
+    display:flex;align-items:center;justify-content:center;
+    font-size:18px;flex:0 0 36px;
+  }
+  .pain-card p{font-size:14.5px;line-height:1.5;color:var(--ink-soft);margin:0;}
+  .pain-card b{color:#C0392B;font-weight:700;}
+  /* bloco da dor centralizado no celular */
+  .pain .label{text-align:center;}
+  .pain h2{text-align:center;}
+  .pain .sub{text-align:center;margin-left:auto;margin-right:auto;}
+  .pain-grid{margin:0 auto;}
+  /* bloco da diferença */
+  .diff{padding:44px 0;background:var(--white);}
+  .diff .label{
+    font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--gold);margin-bottom:14px;text-align:center;
+  }
+  .diff h2{
+    font-family:'Fraunces',serif;font-size:27px;line-height:1.22;
+    color:var(--ink);margin-bottom:12px;text-align:center;
+  }
+  .diff h2 em{font-style:normal;color:var(--gold);}
+  .diff .sub{
+    font-size:15px;line-height:1.55;color:var(--ink-soft);
+    margin:0 auto 26px;max-width:440px;text-align:center;
+  }
+  .diff-grid{display:flex;flex-direction:column;gap:16px;max-width:420px;margin:0 auto;}
+  .diff-card{border-radius:14px;padding:20px 18px;}
+  .diff-card.bad{background:#FBF4EE;border-left:4px solid #C0392B;}
+  .diff-card.good{background:#F1F7F0;border-left:4px solid var(--sage);}
+  .diff-card h3{
+    font-family:'Fraunces',serif;font-size:19px;line-height:1.3;
+    margin-bottom:14px;display:flex;gap:9px;align-items:center;
+  }
+  .diff-card.bad h3{color:#8C2B22;}
+  .diff-card.good h3{color:var(--sage-deep);}
+  .diff-card ul{list-style:none;margin:0;padding:0;}
+  .diff-card li{
+    font-size:14.5px;line-height:1.5;color:var(--ink-soft);
+    padding:0 0 10px 24px;position:relative;
+  }
+  .diff-card.bad li:before{content:"✕";position:absolute;left:0;color:#C0392B;font-weight:700;}
+  .diff-card.good li:before{content:"✓";position:absolute;left:0;color:var(--sage);font-weight:700;}
+  /* todo resuelto */
+  .allin{padding:44px 0;background:var(--cream-deep);}
+  .allin .label{
+    font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--terracotta);margin-bottom:14px;text-align:center;
+  }
+  .allin h2{
+    font-family:'Fraunces',serif;font-size:26px;line-height:1.25;
+    color:var(--ink);margin-bottom:12px;text-align:center;
+  }
+  .allin h2 em{font-style:normal;color:var(--terracotta);}
+  .allin .sub{
+    font-size:15px;line-height:1.55;color:var(--ink-soft);
+    margin:0 auto 26px;max-width:440px;text-align:center;
+  }
+  .allin-grid{
+    display:grid;grid-template-columns:1fr 1fr;gap:12px;
+    max-width:420px;margin:0 auto;
+  }
+  .allin-card{
+    background:var(--white);border-radius:14px;overflow:hidden;
+    box-shadow:0 6px 16px rgba(46,36,24,.08);
+    display:flex;flex-direction:column;
+  }
+  .allin-card img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block;background:var(--cream);}
+  .allin-card .body{padding:13px 13px 16px;}
+  .allin-card h3{
+    font-size:14.5px;line-height:1.3;color:var(--sage-deep);
+    margin-bottom:7px;font-weight:700;
+  }
+  .allin-card p{font-size:12.5px;line-height:1.45;color:var(--ink-soft);margin:0;}
+  .cats-label{
+    font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--terracotta);margin-bottom:14px;text-align:center;
+  }
+  .cats h2 em{font-style:normal;color:var(--terracotta);}
+  /* compactação geral */
+  .pain{padding:34px 0;}
+  .pain h2{font-size:23px;margin-bottom:9px;}
+  .pain .sub{font-size:14px;margin-bottom:18px;}
+  .pain-grid{gap:9px;}
+  .pain-card{padding:12px 13px 12px 11px;gap:10px;}
+  .pain-card .ic{width:30px;height:30px;flex:0 0 30px;font-size:15px;}
+  .pain-card p{font-size:13.5px;line-height:1.42;}
+
+  .diff{padding:34px 0;}
+  .diff h2{font-size:23px;margin-bottom:9px;}
+  .diff .sub{font-size:14px;margin-bottom:20px;}
+  .diff-grid{gap:12px;}
+  .diff-card{padding:16px 15px;}
+  .diff-card h3{font-size:17px;margin-bottom:10px;}
+  .diff-card li{font-size:13.5px;line-height:1.42;padding-bottom:8px;}
+
+  .cats{padding:36px 0;}
+  .cats h2{font-size:23px;margin-bottom:9px;}
+  .cats .sub{font-size:14px;margin-bottom:22px;}
+  .cat-grid{gap:13px;}
+  .cat-card{padding:13px 13px 15px;}
+  .cat-card img{aspect-ratio:16/9;margin-bottom:11px;}
+  .cat-card h3{font-size:16px;margin-bottom:6px;}
+  .cat-card p{font-size:13px;margin-bottom:9px;}
+  .cat-list li{font-size:13px;padding:3px 0 3px 21px;}
+  .cat-more{font-size:12px;padding-top:8px;}
+
+  .seals{padding:20px 0 24px;}
+  .seal .ic{width:40px;height:40px;font-size:17px;margin-bottom:6px;}
+  .seals-band{padding:13px 18px;font-size:15.5px;}
+  .expert{padding:0 0 26px;}
+
+  .benefits{padding:34px 0;}
+  .bonus-stack{padding:36px 0;}
+  .who{padding:34px 0;}
+  .proof{padding:34px 0;}
+  /* cta intermediário */
+  .midcta{padding:0 0 34px;background:var(--cream-deep);text-align:center;}
+  .midcta .cta{max-width:420px;margin:0 auto;}
+  .midcta .trust{
+    display:flex;justify-content:center;gap:14px;flex-wrap:wrap;
+    margin-top:12px;font-size:12px;color:var(--ink-soft);
+  }
+  /* resposta da marca nas valorações */
+  .review-head{align-items:center;}
+  .review-meta{font-size:11.5px;color:var(--ink-soft);display:flex;gap:6px;align-items:center;}
+  .review-meta .st{color:var(--terracotta);letter-spacing:1px;font-size:11px;}
+  .review-reply{
+    background:#FAF5EC;border:1px solid var(--line);border-radius:10px;
+    padding:11px 13px;margin-top:12px;
+  }
+  .review-reply .brand{
+    font-size:11.5px;font-weight:700;color:var(--terracotta);
+    margin-bottom:4px;
+  }
+  .review-reply p{font-size:12.5px;color:var(--ink-soft);margin:0;line-height:1.4;}
+  /* cta final escuro */
+  .final-cta{background:#2E2418;padding:48px 0 52px;text-align:center;}
+  .final-cta h2{
+    font-family:'Fraunces',serif;font-size:27px;line-height:1.28;
+    color:#FBF4E8;margin-bottom:12px;max-width:420px;margin-left:auto;margin-right:auto;
+  }
+  .final-cta h2 em{font-style:normal;color:var(--gold);}
+  .final-cta .lead{
+    font-size:14.5px;line-height:1.55;color:#CBBCA6;
+    max-width:400px;margin:0 auto 22px;
+  }
+  .final-cta .final-mock{max-width:280px;margin:0 auto 22px;border-radius:12px;}
+  .final-cta .cta{background:var(--gold);color:#2E2418;box-shadow:0 4px 0 #B8811F;max-width:420px;margin:0 auto;}
+  .final-trust{
+    display:flex;justify-content:center;gap:10px;flex-wrap:wrap;
+    font-size:12.5px;color:#CBBCA6;margin-top:14px;
+  }
+  .final-warn{font-size:12.5px;color:var(--gold);margin-top:14px;}
+  .final-cta .cur-note{color:#A8977F;opacity:1;margin-top:10px;}
+  /* aviso de compra */
+  .buytoast{
+    position:fixed;left:14px;bottom:14px;z-index:950;
+    background:var(--white);
+    border:1px solid var(--line);
+    border-radius:14px;
+    box-shadow:0 10px 28px rgba(46,36,24,.18);
+    padding:11px 14px 11px 11px;
+    display:flex;gap:11px;align-items:center;
+    max-width:300px;
+    transform:translateY(140%);
+    opacity:0;
+    transition:transform .45s cubic-bezier(.2,.8,.3,1),opacity .35s ease;
+    pointer-events:none;
+  }
+  .buytoast.show{transform:none;opacity:1;pointer-events:auto;}
+  .bt-live{
+    width:34px;height:34px;border-radius:50%;
+    background:#E8F3E6;
+    display:flex;align-items:center;justify-content:center;
+    flex:0 0 34px;
+  }
+  .bt-pulse{
+    width:11px;height:11px;border-radius:50%;
+    background:#2FA84F;
+    box-shadow:0 0 0 0 rgba(47,168,79,.55);
+    animation:btpulse 1.9s infinite;
+  }
+  @keyframes btpulse{
+    0%{box-shadow:0 0 0 0 rgba(47,168,79,.55);}
+    70%{box-shadow:0 0 0 10px rgba(47,168,79,0);}
+    100%{box-shadow:0 0 0 0 rgba(47,168,79,0);}
+  }
+  @media (prefers-reduced-motion: reduce){ .bt-pulse{animation:none;} }
+  .buytoast .bt-name{font-size:13px;font-weight:700;color:var(--ink);line-height:1.25;}
+  .buytoast .bt-what{font-size:12px;color:var(--ink-soft);line-height:1.3;margin-top:2px;}
+  .buytoast .bt-time{font-size:10.5px;color:#A89F95;margin-top:3px;display:flex;align-items:center;gap:4px;}
+  .buytoast .dot{width:6px;height:6px;border-radius:50%;background:var(--sage);display:inline-block;}
+  .buytoast .bt-close{
+    position:absolute;top:5px;right:8px;background:none;border:none;
+    font-size:15px;color:#B8ADA1;cursor:pointer;line-height:1;padding:2px;
+  }
+  @media(max-width:420px){ .buytoast{left:10px;right:10px;max-width:none;} }
 </style>
 </head>
 <body>
@@ -940,17 +1212,218 @@ src="https://www.facebook.com/tr?id=2031116877579772&ev=PageView&noscript=1"
 
 <section class="hero">
   <div class="wrap hero-inner">
-    <h1 class="headline"><span class="lead">+365 recetas</span> sin azúcar, sin gluten ni lactosa</h1>
-    <p class="sub">Recetas prácticas para comer bien todos los días, sin renunciar al placer de la mesa.</p>
+    <h1 class="headline">¿Cansada de sentirte <span class="lead">hinchada, pesada</span> e incómoda después de comer?</h1>
+    <div class="hero-heart">♥</div>
+    <p class="hero-promise">Dile adiós al malestar y a la hinchazón</p>
+    <p class="sub">con recetas fáciles y deliciosas que te dejan liviana desde los primeros días.</p>
     <div class="hero-img-wrap">
-      <img loading="lazy" decoding="async" src="hero-chef-julia.jpg" alt="Chef Julia junto al libro +365 Recetas Sin Azúcar, Gluten ni Lactosa" class="hero-img">
+      <img fetchpriority="high" decoding="async" src="plan-basica-mockup.jpg" alt="Libro Cocina Sin Culpa con 365 recetas" class="hero-img">
     </div>
+    <div class="hero-band">365 recetas saludables y prácticas para dejar de sufrir pensando qué cocinar.</div>
     <div class="hero-cta-block">
-      <a href="#recetas" class="cta">Quiero acceder a las recetas</a>
       <div class="trust">
         <span>📱 Acceso inmediato</span>
         <span>🔒 Compra segura</span>
         <span>🛡️ Garantía de 15 días</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="seals">
+  <div class="wrap">
+    <div class="seals-row">
+      <div class="seal"><div class="ic">🌿</div><span>Sin<br>azúcar</span></div>
+      <div class="seal"><div class="ic">🌾</div><span>Sin<br>gluten</span></div>
+      <div class="seal"><div class="ic">🥛</div><span>Sin<br>lactosa</span></div>
+      <div class="seal"><div class="ic">⏱️</div><span>Rápidas y<br>saludables</span></div>
+    </div>
+    <div class="seals-band">Come rico, siéntete liviana y disfruta cada comida.</div>
+  </div>
+</section>
+
+<section class="expert">
+  <div class="wrap">
+    <img loading="lazy" decoding="async" class="expert-img" src="hero-chef-julia.jpg" alt="Chef Julia con el libro Cocina Sin Culpa">
+  </div>
+</section>
+
+<section class="pain">
+  <div class="wrap">
+    <div class="label">¿Te suena familiar?</div>
+    <h2>El problema no es la <em>falta de voluntad</em></h2>
+    <p class="sub">Es terminar pesada después de comer, no saber qué cocinar y cansarte de intentar cuidarte sin encontrar algo que puedas sostener.</p>
+    <div class="pain-grid">
+      <div class="pain-card">
+        <div class="ic">🤦‍♀️</div>
+        <p>¿Terminas de comer y sientes la panza <b>pesada e hinchada</b>, aunque intentes cuidarte?</p>
+      </div>
+      <div class="pain-card">
+        <div class="ic">😞</div>
+        <p>¿Quieres comer mejor pero ya no sabes <b>qué cocinar</b> para no caer en lo de siempre?</p>
+      </div>
+      <div class="pain-card">
+        <div class="ic">😣</div>
+        <p>¿Sientes que te esfuerzas por cuidarte y aun así terminas <b>cansada y sin ganas</b>?</p>
+      </div>
+      <div class="pain-card">
+        <div class="ic">🙇‍♀️</div>
+        <p>¿Te pasa que empiezas a comer saludable… pero terminas <b>abandonando</b> porque no es práctico?</p>
+      </div>
+      <div class="pain-card">
+        <div class="ic">🍫</div>
+        <p>¿Terminas comiendo cualquier cosa por <b>ansiedad, cansancio o falta de ideas</b>?</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="diff">
+  <div class="wrap">
+    <div class="label">La diferencia está acá</div>
+    <h2>La diferencia no está en hacer <em>dieta</em></h2>
+    <p class="sub">Está en tener recetas simples, organizadas y deliciosas que puedas sostener incluso en las semanas más caóticas, sin pasar hambre ni sentir que estás haciendo sacrificios.</p>
+    <div class="diff-grid">
+      <div class="diff-card bad">
+        <h3><span>❌</span> Las dietas de siempre</h3>
+        <ul>
+          <li>Son difíciles de sostener y terminas abandonando.</li>
+          <li>Te dejan sin ideas y pensando todo el día en comida.</li>
+          <li>Generan ansiedad y sensación de restricción constante.</li>
+          <li>Terminas volviendo a los mismos hábitos de siempre.</li>
+        </ul>
+      </div>
+      <div class="diff-card good">
+        <h3><span>✅</span> Alimentación saludable, fácil y sin culpa</h3>
+        <ul>
+          <li>Recetas fáciles, rápidas y deliciosas para el día a día.</li>
+          <li>Ingredientes simples y comidas que de verdad vas a disfrutar.</li>
+          <li>Menos pesadez, más liviandad y más ganas.</li>
+          <li>Una forma práctica de comer mejor sin vivir a dieta.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="cats">
+  <div class="wrap">
+    <div class="cats-label">Todo resuelto en un solo lugar</div>
+    <h2>Todo lo que necesitas para <em>sentirte más liviana</em> y dejar de sufrir pensando qué cocinar</h2>
+    <p class="sub">365 recetas simples, rápidas y deliciosas, organizadas en 8 módulos para que cuidarte deje de sentirse complicado.</p>
+    <div class="cat-grid">
+      <div class="cat-card">
+        <div class="cat-head"><span class="n">Módulo 1</span><span class="qty">50 recetas</span></div>
+        <img loading="lazy" decoding="async" src="receta-panqueque-platano.jpg" alt="Desayuno Ligero">
+        <h3>Desayunos para empezar bien el día</h3>
+        <p>Opciones rápidas y fáciles para sentirte bien desde la primera comida del día.</p>
+        <ul class="cat-list">
+          <li>Panqueques de plátano</li>
+          <li>Crepiocas saladas</li>
+          <li>Pudín de chía</li>
+          <li>Granola casera</li>
+          <li>Batidos y smoothie bowls</li>
+        </ul>
+        <div class="cat-more">+45 recetas más de desayunos dulces y salados.</div>
+      </div>
+      <div class="cat-card">
+        <div class="cat-head"><span class="n">Módulo 2</span><span class="qty">55 recetas</span></div>
+        <img loading="lazy" decoding="async" src="receta-pan-sin-gluten.jpg" alt="Panes y Bizcochos Sin Gluten">
+        <h3>Panes y bizcochos que no se desmoronan</h3>
+        <p>Pan casero y bizcochos esponjosos de verdad, sin harina de trigo.</p>
+        <ul class="cat-list">
+          <li>Pan casero sin gluten</li>
+          <li>Bizcocho de zanahoria</li>
+          <li>Pan de plátano húmedo</li>
+          <li>Tortillas flexibles</li>
+          <li>Focaccia con romero</li>
+        </ul>
+        <div class="cat-more">+50 recetas más de panes, bollos y bizcochos.</div>
+      </div>
+      <div class="cat-card">
+        <div class="cat-head"><span class="n">Módulo 3</span><span class="qty">70 recetas</span></div>
+        <img loading="lazy" decoding="async" src="receta-lasana.jpg" alt="Almuerzos y Cenas Prácticas">
+        <h3>Comidas completas que te dejan satisfecha y liviana</h3>
+        <p>Platos ricos y sin azúcar ni gluten para disfrutar sin sentirte pesada después.</p>
+        <ul class="cat-list">
+          <li>Lasaña cremosa</li>
+          <li>Pollo al limón con papas</li>
+          <li>Albóndigas en salsa</li>
+          <li>Curry de garbanzos</li>
+          <li>Pescado a la plancha</li>
+        </ul>
+        <div class="cat-more">+65 recetas más de comidas y cenas completas.</div>
+      </div>
+      <div class="cat-card">
+        <div class="cat-head"><span class="n">Módulo 4</span><span class="qty">50 recetas</span></div>
+        <img loading="lazy" decoding="async" src="receta-empanada-pollo.jpg" alt="Meriendas y Antojitos">
+        <h3>Opciones rápidas para no terminar picando cualquier cosa</h3>
+        <p>Snacks simples y saciantes para esos momentos donde aparece el antojo.</p>
+        <ul class="cat-list">
+          <li>Empanadas de pollo</li>
+          <li>Hummus cremoso</li>
+          <li>Chips de camote</li>
+          <li>Barritas de dátil</li>
+          <li>Rollitos de lechuga</li>
+        </ul>
+        <div class="cat-more">+45 recetas más de antojitos y meriendas.</div>
+      </div>
+      <div class="cat-card">
+        <div class="cat-head"><span class="n">Módulo 5</span><span class="qty">65 recetas</span></div>
+        <img loading="lazy" decoding="async" src="cat-postres.jpg" alt="Postres Sin Azúcar">
+        <h3>Postres sin azúcar para darte el gusto</h3>
+        <p>Preparaciones deliciosas para disfrutar algo dulce sin volver a caer en lo de siempre.</p>
+        <ul class="cat-list">
+          <li>Brownie de chocolate</li>
+          <li>Trufas cremosas</li>
+          <li>Mousse de aguacate</li>
+          <li>Flan de coco</li>
+          <li>Helado de plátano</li>
+        </ul>
+        <div class="cat-more">+60 recetas más de postres y dulces.</div>
+      </div>
+      <div class="cat-card">
+        <div class="cat-head"><span class="n">Módulo 6</span><span class="qty">35 recetas</span></div>
+        <img loading="lazy" decoding="async" src="cat-cremosas.jpg" alt="Recetas Sin Lactosa Cremosas">
+        <h3>Cremas y salsas sin una gota de lácteos</h3>
+        <p>Cremosidad de verdad para quien no puede o no quiere lácteos.</p>
+        <ul class="cat-list">
+          <li>Crema agria vegetal</li>
+          <li>Queso crema untable</li>
+          <li>Salsa alfredo</li>
+          <li>Yogur casero</li>
+          <li>Panna cotta de coco</li>
+        </ul>
+        <div class="cat-more">+30 recetas más de cremas y fermentados.</div>
+      </div>
+      <div class="cat-card">
+        <div class="cat-head"><span class="n">Módulo 7</span><span class="qty">25 recetas</span></div>
+        <img loading="lazy" decoding="async" src="cat-salsas.jpg" alt="Salsas, Cremas y Acompañamientos">
+        <h3>Salsas y acompañamientos que cambian todo</h3>
+        <p>Las bases que hacen que todo lo demás sepa mejor.</p>
+        <ul class="cat-list">
+          <li>Salsa de tomate casera</li>
+          <li>Pesto sin queso</li>
+          <li>Vinagreta cremosa</li>
+          <li>Puré de coliflor</li>
+          <li>Guacamole clásico</li>
+        </ul>
+        <div class="cat-more">+20 recetas más de salsas y guarniciones.</div>
+      </div>
+      <div class="cat-card">
+        <div class="cat-head"><span class="n">Módulo 8</span><span class="qty">15 recetas</span></div>
+        <img loading="lazy" decoding="async" src="cat-bebidas.jpg" alt="Bebidas, Batidos y Extras">
+        <h3>Bebidas y batidos para acompañar el día</h3>
+        <p>Para acompañar, para el calor y para cerrar el día.</p>
+        <ul class="cat-list">
+          <li>Leche de almendra casera</li>
+          <li>Chocolate caliente</li>
+          <li>Agua fresca de pepino</li>
+          <li>Batido verde</li>
+          <li>Infusiones</li>
+        </ul>
+        <div class="cat-more">+10 recetas más de bebidas y extras.</div>
       </div>
     </div>
   </div>
@@ -974,142 +1447,12 @@ src="https://www.facebook.com/tr?id=2031116877579772&ev=PageView&noscript=1"
   </div>
 </section>
 
-<section class="cats">
+<section class="midcta">
   <div class="wrap">
-    <h2>📚 365 recetas organizadas en 8 módulos para que encuentres lo que buscas en segundos.</h2>
-    <p class="sub">Recibes una biblioteca completa, separada por tipo de comida, para cocinar con más claridad y no repetir el mismo menú toda la semana.</p>
-    <div class="cat-grid">
-      <div class="cat-card">
-        <div class="cat-head"><span class="n">Módulo 1</span><span class="qty">50 recetas</span></div>
-        <img loading="lazy" decoding="async" src="receta-panqueque-platano.jpg" alt="Desayuno Ligero">
-        <h3>Desayuno Ligero</h3>
-        <p>Empieza el día sin repetir siempre lo mismo, con opciones que se hacen en minutos.</p>
-        <ul class="cat-list">
-          <li>Panqueques de plátano</li>
-          <li>Crepiocas saladas</li>
-          <li>Pudín de chía</li>
-          <li>Granola casera</li>
-          <li>Batidos y smoothie bowls</li>
-        </ul>
-        <div class="cat-more">+45 recetas más de desayunos dulces y salados.</div>
-      </div>
-      <div class="cat-card">
-        <div class="cat-head"><span class="n">Módulo 2</span><span class="qty">55 recetas</span></div>
-        <img loading="lazy" decoding="async" src="receta-pan-sin-gluten.jpg" alt="Panes y Bizcochos Sin Gluten">
-        <h3>Panes y Bizcochos Sin Gluten</h3>
-        <p>Pan que no se desmorona al cortarlo y bizcochos esponjosos de verdad.</p>
-        <ul class="cat-list">
-          <li>Pan casero sin gluten</li>
-          <li>Bizcocho de zanahoria</li>
-          <li>Pan de plátano húmedo</li>
-          <li>Tortillas flexibles</li>
-          <li>Focaccia con romero</li>
-        </ul>
-        <div class="cat-more">+50 recetas más de panes, bollos y bizcochos.</div>
-      </div>
-      <div class="cat-card">
-        <div class="cat-head"><span class="n">Módulo 3</span><span class="qty">70 recetas</span></div>
-        <img loading="lazy" decoding="async" src="receta-lasana.jpg" alt="Almuerzos y Cenas Prácticas">
-        <h3>Almuerzos y Cenas Prácticas</h3>
-        <p>Platos completos para resolver el día sin pensar qué cocinar.</p>
-        <ul class="cat-list">
-          <li>Lasaña cremosa</li>
-          <li>Pollo al limón con papas</li>
-          <li>Albóndigas en salsa</li>
-          <li>Curry de garbanzos</li>
-          <li>Pescado a la plancha</li>
-        </ul>
-        <div class="cat-more">+65 recetas más de comidas y cenas completas.</div>
-      </div>
-      <div class="cat-card">
-        <div class="cat-head"><span class="n">Módulo 4</span><span class="qty">50 recetas</span></div>
-        <img loading="lazy" decoding="async" src="receta-empanada-pollo.jpg" alt="Meriendas y Antojitos">
-        <h3>Meriendas y Antojitos</h3>
-        <p>Para el antojo de media tarde y para llevar en la lonchera.</p>
-        <ul class="cat-list">
-          <li>Empanadas de pollo</li>
-          <li>Hummus cremoso</li>
-          <li>Chips de camote</li>
-          <li>Barritas de dátil</li>
-          <li>Rollitos de lechuga</li>
-        </ul>
-        <div class="cat-more">+45 recetas más de antojitos y meriendas.</div>
-      </div>
-      <div class="cat-card">
-        <div class="cat-head"><span class="n">Módulo 5</span><span class="qty">65 recetas</span></div>
-        <img loading="lazy" decoding="async" src="cat-postres.jpg" alt="Postres Sin Azúcar">
-        <h3>Postres Sin Azúcar</h3>
-        <p>Postres que saben a postre, sin una pizca de azúcar refinada.</p>
-        <ul class="cat-list">
-          <li>Brownie de chocolate</li>
-          <li>Trufas cremosas</li>
-          <li>Mousse de aguacate</li>
-          <li>Flan de coco</li>
-          <li>Helado de plátano</li>
-        </ul>
-        <div class="cat-more">+60 recetas más de postres y dulces.</div>
-      </div>
-      <div class="cat-card">
-        <div class="cat-head"><span class="n">Módulo 6</span><span class="qty">35 recetas</span></div>
-        <img loading="lazy" decoding="async" src="cat-cremosas.jpg" alt="Recetas Sin Lactosa Cremosas">
-        <h3>Recetas Sin Lactosa Cremosas</h3>
-        <p>Cremosidad de verdad sin una gota de leche de vaca.</p>
-        <ul class="cat-list">
-          <li>Crema agria vegetal</li>
-          <li>Queso crema untable</li>
-          <li>Salsa alfredo</li>
-          <li>Yogur casero</li>
-          <li>Panna cotta de coco</li>
-        </ul>
-        <div class="cat-more">+30 recetas más de cremas y fermentados.</div>
-      </div>
-      <div class="cat-card">
-        <div class="cat-head"><span class="n">Módulo 7</span><span class="qty">25 recetas</span></div>
-        <img loading="lazy" decoding="async" src="cat-salsas.jpg" alt="Salsas, Cremas y Acompañamientos">
-        <h3>Salsas, Cremas y Acompañamientos</h3>
-        <p>Las bases que hacen que todo lo demás sepa mejor.</p>
-        <ul class="cat-list">
-          <li>Salsa de tomate casera</li>
-          <li>Pesto sin queso</li>
-          <li>Vinagreta cremosa</li>
-          <li>Puré de coliflor</li>
-          <li>Guacamole clásico</li>
-        </ul>
-        <div class="cat-more">+20 recetas más de salsas y guarniciones.</div>
-      </div>
-      <div class="cat-card">
-        <div class="cat-head"><span class="n">Módulo 8</span><span class="qty">15 recetas</span></div>
-        <img loading="lazy" decoding="async" src="cat-bebidas.jpg" alt="Bebidas, Batidos y Extras">
-        <h3>Bebidas, Batidos y Extras</h3>
-        <p>Para acompañar, para el calor y para cerrar el día.</p>
-        <ul class="cat-list">
-          <li>Leche de almendra casera</li>
-          <li>Chocolate caliente</li>
-          <li>Agua fresca de pepino</li>
-          <li>Batido verde</li>
-          <li>Infusiones</li>
-        </ul>
-        <div class="cat-more">+10 recetas más de bebidas y extras.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="benefits">
-  <div class="wrap">
-    <h2>Beneficios del producto:</h2>
-    <div class="benefits-grid">
-      <div class="benefit"><span class="icon">🍰</span>365 recetas dulces y saladas</div>
-      <div class="benefit"><span class="icon">🌿</span>Sin azúcar, sin gluten y sin lactosa</div>
-      <div class="benefit"><span class="icon">📖</span>Recetas simples e ilustradas</div>
-      <div class="benefit"><span class="icon">🍽️</span>Desayuno, almuerzo, cena y postre</div>
-      <div class="benefit"><span class="icon">🪶</span>Más ligereza sin perder el sabor</div>
-      <div class="benefit"><span class="icon">👩‍🍳</span>Fáciles incluso si no tienes práctica</div>
-      <div class="benefit"><span class="icon">✨</span>Se acabó la monotonía en la cocina</div>
-      <div class="benefit"><span class="icon">📱</span>Acceso desde el celular o para imprimir</div>
-    </div>
-    <div class="benefits-cta">
-      <a href="#opiniones" class="cta">Quiero acceder a las recetas</a>
+    <a href="#planes" class="cta">Quiero acceder a las recetas</a>
+    <div class="trust">
+      <span>📱 Acceso inmediato</span>
+      <span>🛡️ Garantía de 15 días</span>
     </div>
   </div>
 </section>
@@ -1135,19 +1478,6 @@ src="https://www.facebook.com/tr?id=2031116877579772&ev=PageView&noscript=1"
   </div>
 </section>
 
-<section class="who">
-  <div class="wrap">
-    <h2 class="section-title">Este recetario es para ti si...</h2>
-    <div class="who-list">
-      <div class="who-item"><span class="check">✓</span>Quieres comer mejor sin vivir de comida sin sabor</div>
-      <div class="who-item"><span class="check">✓</span>Sientes que el azúcar, el gluten o la lactosa te pesan</div>
-      <div class="who-item"><span class="check">✓</span>Te cansaste de no saber qué preparar cada día</div>
-      <div class="who-item"><span class="check">✓</span>Quieres consentir a tu familia con recetas equilibradas</div>
-      <div class="who-item"><span class="check">✓</span>Buscas ideas rápidas para cualquier comida del día</div>
-      <div class="who-item"><span class="check">✓</span>Quieres platos que se vean y sepan como los de siempre</div>
-    </div>
-  </div>
-</section>
 
 <section class="bonus-stack">
   <div class="wrap">
@@ -1290,70 +1620,88 @@ src="https://www.facebook.com/tr?id=2031116877579772&ev=PageView&noscript=1"
       <div class="rev-viewport">
         <div class="rev-track" id="revTrack">
       <div class="review-card">
-        <div class="stars">★★★★★</div>
         <div class="review-head">
           <div class="review-avatar" style="background:#D3541A">CR</div>
           <div>
             <div class="review-name">Camila Rojas</div>
-            <div class="review-date">14 de agosto de 2026</div>
+            <div class="review-meta"><span class="st">★★★★★</span> · Compra verificada</div>
           </div>
         </div>
-        <p>Pensaba que una receta sin azúcar iba a quedar sosa, pero el bizcocho de zanahoria me sorprendió. Quedó esponjoso y en casa se lo comieron sin notar la diferencia.</p>
+        <p>"Pensaba que una receta sin azúcar iba a quedar sosa, pero el bizcocho de zanahoria me sorprendió. En casa se lo comieron sin notar la diferencia."</p>
+        <div class="review-reply">
+          <div class="brand">Cocina Sin Culpa</div>
+          <p>Eso mismo nos cuentan muchísimas clientas ❤️</p>
+        </div>
       </div>
       <div class="review-card">
-        <div class="stars">★★★★★</div>
         <div class="review-head">
           <div class="review-avatar" style="background:#4F7A3D">DO</div>
           <div>
             <div class="review-name">Daniela Ortiz</div>
-            <div class="review-date">2 de agosto de 2026</div>
+            <div class="review-meta"><span class="st">★★★★★</span> · Compra verificada</div>
           </div>
         </div>
-        <p>Lo compré por los postres y ya hice el brownie, las trufas y los panqueques. Todo simple y rico. Ahora tengo opción cuando me da el antojo de dulce.</p>
+        <p>"Los postres me salvaron porque yo era MUY adicta al dulce. Ahora tengo opción cuando me da el antojo."</p>
+        <div class="review-reply">
+          <div class="brand">Cocina Sin Culpa</div>
+          <p>Los favoritos de la comunidad 🍫</p>
+        </div>
       </div>
       <div class="review-card">
-        <div class="stars">★★★★★</div>
         <div class="review-head">
           <div class="review-avatar" style="background:#A83912">MV</div>
           <div>
             <div class="review-name">Mariana Vega</div>
-            <div class="review-date">27 de julio de 2026</div>
+            <div class="review-meta"><span class="st">★★★★★</span> · Compra verificada</div>
           </div>
         </div>
-        <p>Mi hija es celíaca y siempre batallo con el pan. El de este libro sí funciona, no se desmorona al cortarlo. Con eso solo ya valió lo que pagué.</p>
+        <p>"Mi hija no puede gluten y siempre batallo con el pan. El de este libro sí funciona, no se desmorona al cortarlo."</p>
+        <div class="review-reply">
+          <div class="brand">Cocina Sin Culpa</div>
+          <p>Gracias por confiar en nosotras 🙌</p>
+        </div>
       </div>
       <div class="review-card">
-        <div class="stars">★★★★★</div>
         <div class="review-head">
           <div class="review-avatar" style="background:#E8A22C">PM</div>
           <div>
             <div class="review-name">Paula Medina</div>
-            <div class="review-date">19 de julio de 2026</div>
+            <div class="review-meta"><span class="st">★★★★★</span> · Compra verificada</div>
           </div>
         </div>
-        <p>Las medidas vienen en gramos y en tazas, que para mí fue clave porque no tengo balanza. Las explicaciones son cortas y se entienden.</p>
+        <p>"Las medidas vienen en gramos y en tazas, que para mí fue clave porque no tengo balanza. Las explicaciones son cortas y se entienden."</p>
+        <div class="review-reply">
+          <div class="brand">Cocina Sin Culpa</div>
+          <p>Queríamos que fuera fácil para todas 💛</p>
+        </div>
       </div>
       <div class="review-card">
-        <div class="stars">★★★★★</div>
         <div class="review-head">
           <div class="review-avatar" style="background:#2E4A24">AS</div>
           <div>
             <div class="review-name">Andrea Salas</div>
-            <div class="review-date">8 de julio de 2026</div>
+            <div class="review-meta"><span class="st">★★★★★</span> · Compra verificada</div>
           </div>
         </div>
-        <p>Lo mejor son los consejos al final de cada receta. Me avisaron justo del error que siempre cometía con la tapioca y ahora me sale perfecta.</p>
+        <p>"Hay recetas que hago literal en 15 minutos. Me solucionó las cenas de la semana."</p>
+        <div class="review-reply">
+          <div class="brand">Cocina Sin Culpa</div>
+          <p>Simple, rápido y rico 🙌</p>
+        </div>
       </div>
       <div class="review-card">
-        <div class="stars">★★★★★</div>
         <div class="review-head">
           <div class="review-avatar" style="background:#D3541A">VP</div>
           <div>
             <div class="review-name">Verónica Pérez</div>
-            <div class="review-date">1 de julio de 2026</div>
+            <div class="review-meta"><span class="st">★★★★★</span> · Compra verificada</div>
           </div>
         </div>
-        <p>Saqué la harina de trigo de mi cocina hace dos meses y no extraño nada. La lasaña con calabacita es ahora el plato fijo de los domingos.</p>
+        <p>"No sabía qué comer porque TODO me caía pesado. Ahora tengo recetas que sé que me hacen bien."</p>
+        <div class="review-reply">
+          <div class="brand">Cocina Sin Culpa</div>
+          <p>Te entendemos perfectamente ❤️</p>
+        </div>
       </div>
         </div>
       </div>
@@ -1406,6 +1754,21 @@ src="https://www.facebook.com/tr?id=2031116877579772&ev=PageView&noscript=1"
   </div>
 </section>
 
+<section class="who">
+  <div class="wrap">
+    <h2 class="section-title">Esto es para ti si...</h2>
+    <div class="who-list">
+      <div class="who-item"><span class="check">✓</span>Terminas de comer y te sientes pesada, aunque intentes cuidarte</div>
+      <div class="who-item"><span class="check">✓</span>Ya no sabes qué cocinar y repites siempre los mismos platos</div>
+      <div class="who-item"><span class="check">✓</span>Empezaste dietas antes y las dejaste porque no eran prácticas</div>
+      <div class="who-item"><span class="check">✓</span>Quieres darte un gusto dulce sin sentir culpa después</div>
+      <div class="who-item"><span class="check">✓</span>Cocinas para toda la familia y no quieres hacer dos comidas</div>
+      <div class="who-item"><span class="check">✓</span>Tienes poco tiempo y necesitas recetas que salgan en minutos</div>
+      <div class="who-item"><span class="check">✓</span>No tienes práctica en la cocina y necesitas un paso a paso claro</div>
+    </div>
+  </div>
+</section>
+
 <section class="faq">
   <div class="wrap">
     <h2 class="section-title">Preguntas frecuentes</h2>
@@ -1436,36 +1799,19 @@ src="https://www.facebook.com/tr?id=2031116877579772&ev=PageView&noscript=1"
 
 <section class="final-cta">
   <div class="wrap">
-    <h2>Empieza a cocinar sin culpa hoy mismo</h2>
+    <h2>Empieza hoy a sentirte <em>más liviana</em> después de cada comida</h2>
+    <p class="lead">Más de 500 recetas sin azúcar, sin gluten y sin lactosa para dejar de sentirte pesada y volver a disfrutar la comida.</p>
     <img loading="lazy" decoding="async" class="final-mock" src="plan-super-mockup.jpg" alt="Súper oferta — 500 recetas y 3 bonos">
-    <p>Acceso inmediato · Garantía de 15 días · Compra 100% segura</p>
-    <a href="https://pay.hotmart.com/H107615347P?off=k88744k3&checkoutMode=10" class="cta" onclick="fbq('track','InitiateCheckout',{content_name:'Súper oferta',value:12.90,currency:'USD'});">Quiero la Súper oferta por $12,90</a>
+    <a href="https://pay.hotmart.com/H107615347P?off=k88744k3&checkoutMode=10" class="cta" onclick="fbq('track','InitiateCheckout',{content_name:'Súper oferta',value:12.90,currency:'USD'});">Quiero sentirme más liviana →</a>
+    <div class="final-trust">
+      <span>🔒 Pago seguro</span><span>·</span>
+      <span>Acceso inmediato</span><span>·</span>
+      <span>Garantía de 15 días</span>
+    </div>
+    <div class="final-warn">⚠️ Oferta disponible por tiempo limitado</div>
     <div class="cur-note">Precio en dólares · se convierte a la moneda de tu país en el pago</div>
   </div>
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1583,7 +1929,6 @@ document.querySelectorAll('.faq-q').forEach(function(q){
 })();
 </script>
 
-
 <div class="up-overlay" id="upOverlay">
   <div class="up-box">
     <button class="up-close" id="upClose" aria-label="Cerrar">×</button>
@@ -1621,8 +1966,6 @@ document.querySelectorAll('.faq-q').forEach(function(q){
 })();
 </script>
 
-
-
 <script>
 // reveal ao rolar
 (function(){
@@ -1636,7 +1979,6 @@ document.querySelectorAll('.faq-q').forEach(function(q){
   }, {rootMargin:'0px 0px -8% 0px', threshold:0.06});
   els.forEach(function(el){ io.observe(el); });
 })();
-
 
 </script>
 <script>
@@ -1683,5 +2025,57 @@ document.querySelectorAll('.faq-q').forEach(function(q){
   setInterval(function(){ goTo((current+1)%count); }, 5000);
 })();
 </script>
+
+<div class="buytoast" id="buyToast">
+  <button class="bt-close" id="btClose" aria-label="Cerrar">×</button>
+  <span class="bt-live"><span class="bt-pulse"></span></span>
+  <div>
+    <div class="bt-name" id="btName"></div>
+    <div class="bt-what" id="btWhat"></div>
+    <div class="bt-time"><span id="btTime"></span></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  // ── EDITÁVEL: sustitui por compras reales ──────────────────────
+  var COMPRAS = [
+    {nombre:"María G.", lugar:"Ciudad de México", oferta:"Súper oferta", hace:"hace 4 minutos"},
+    {nombre:"Lucía R.", lugar:"Bogotá",           oferta:"Oferta básica", hace:"hace 11 minutos"},
+    {nombre:"Andrea M.", lugar:"Guadalajara",     oferta:"Súper oferta", hace:"hace 18 minutos"},
+    {nombre:"Paula S.", lugar:"Medellín",         oferta:"Súper oferta", hace:"hace 26 minutos"},
+    {nombre:"Carolina T.", lugar:"Monterrey",     oferta:"Oferta básica", hace:"hace 33 minutos"},
+    {nombre:"Valeria N.", lugar:"Quito",          oferta:"Súper oferta", hace:"hace 41 minutos"}
+  ];
+  var PRIMERA = 12000;   // espera antes del primero
+  var VISIBLE = 6000;    // cuánto queda en pantalla
+  var PAUSA   = 18000;   // intervalo entre avisos
+  // ───────────────────────────────────────────────────────────────
+
+  var el = document.getElementById('buyToast');
+  if(!el || !COMPRAS.length) return;
+  var i = 0, cerrado = false;
+
+  document.getElementById('btClose').addEventListener('click', function(){
+    cerrado = true; el.classList.remove('show');
+  });
+
+  function mostrar(){
+    if(cerrado) return;
+    var c = COMPRAS[i % COMPRAS.length]; i++;
+    document.getElementById('btName').textContent = c.nombre + ' · ' + c.lugar;
+    document.getElementById('btWhat').textContent = 'Acaba de llevarse la ' + c.oferta;
+    document.getElementById('btTime').textContent = c.hace;
+    el.classList.add('show');
+    setTimeout(function(){ el.classList.remove('show'); }, VISIBLE);
+  }
+
+  setTimeout(function(){
+    mostrar();
+    setInterval(mostrar, PAUSA);
+  }, PRIMERA);
+})();
+</script>
+
 </body>
 </html>
